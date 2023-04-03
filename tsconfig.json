@@ -21,7 +21,8 @@
     "paths": {
       "grida": ["src/components/index.ts"]
     },
-    "typeRoots": ["node_modules/@types", "src/components/index.d.ts"]
+    "typeRoots": ["node_modules/@types", "src/components/index.d.ts"],
+    "types": ["vitest/globals"]
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
