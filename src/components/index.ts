@@ -1,3 +1,3 @@
-export type { IHelloWorld } from './Helloworld'
-export { Helloworld } from './Helloworld'
-import './style.css'
+import 'tailwindcss/tailwind.css'
+
+export { Alert, type AlertProps } from './Alert'

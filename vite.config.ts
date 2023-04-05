@@ -23,12 +23,18 @@ export default defineConfig((configEnv) => ({
   build: {
     lib: {
       entry: resolve('src', 'components/index.ts'),
-      name: 'ReactViteLibrary',
-      formats: ['es', 'umd'],
-      fileName: (format) => `grida.${format}.js`,
+      name: 'Grida',
+      formats: ['es', 'cjs'],
+      fileName: 'index',
     },
     rollupOptions: {
       external: [...Object.keys(packageJson.peerDependencies)],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM',
+        },
+      },
     },
   },
 }))

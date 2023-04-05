@@ -1,0 +1,64 @@
+.alert {
+  @apply border border-l-4 rounded-sm;
+
+  &-small {
+    @apply px-2.5 py-4;
+
+    & .alert-header > .title {
+      @apply text-base font-normal gap-1.5;
+    }
+  }
+
+  &-large {
+    @apply px-6 py-5;
+
+    & .alert-header .title {
+      @apply text-xl font-bold gap-3;
+    }
+  }
+
+  &-success {
+    @apply bg-success/10 border-success;
+    :where(.icon) {
+      @apply text-success;
+    }
+  }
+  &-warning {
+    @apply bg-warning/10 border-warning;
+    :where(.icon) {
+      @apply text-warning;
+    }
+  }
+  &-error {
+    @apply bg-error/10 border-error;
+    :where(.icon) {
+      @apply text-error;
+    }
+  }
+  &-info {
+    @apply bg-info/10 border-info;
+    :where(.icon) {
+      @apply text-info;
+    }
+  }
+
+  &-banner {
+    @apply border-none;
+  }
+
+  &-header {
+    @apply flex justify-between;
+
+    & > .extra {
+      @apply flex items-center gap-2;
+    }
+  }
+
+  &-description {
+    @apply text-base text-black/60 font-normal;
+  }
+
+  :where(header, section) {
+    @apply flex items-center;
+  }
+}
