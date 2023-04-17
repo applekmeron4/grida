@@ -1,0 +1,52 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs'
+import { DesignTokenDocBlock } from 'storybook-design-token/dist/doc-blocks'
+
+import Pallete from './Palette'
+
+<Meta title="Design Tokens/Colors" />
+
+# Colors
+
+## Text
+
+<br />
+
+<Pallete
+  title="Lightmode (Default)"
+  colors={[
+    {
+      name: 'Title Text',
+      value: 'rgba(0, 0, 0, 0.87)',
+    },
+    {
+      name: 'Title Text',
+      value: 'rgba(0, 0, 0, 0.6)',
+    },
+    {
+      name: 'Title Text',
+      value: 'rgba(0, 0, 0, 0.38)',
+    },
+    {
+      name: 'Title Text',
+      value: '#dedede',
+    },
+  ]}
+/>
+<Pallete
+  darktheme
+  title="Darkmode"
+  colors={[
+    {
+      name: 'Title Text',
+      value: 'rgba(255, 255, 255, 1)',
+    },
+    {
+      name: 'Title Text',
+      value: 'rgba(255, 255, 255, 0.8)',
+    },
+    {
+      name: 'Title Text',
+      value: 'rgba(255, 255, 255, 0.3)',
+    },
+  ]}
+/>

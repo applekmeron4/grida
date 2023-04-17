@@ -22,7 +22,7 @@
       "grida": ["src/components/index.ts"]
     },
     "typeRoots": ["node_modules/@types", "src/components/index.d.ts"],
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals", "node", "webpack-env"]
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

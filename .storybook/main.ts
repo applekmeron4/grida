@@ -13,6 +13,7 @@ const config: StorybookConfig = {
         postCss: true,
       },
     },
+    'storybook-design-token',
   ],
   framework: {
     name: '@storybook/react-vite',
